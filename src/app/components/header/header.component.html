@@ -1,0 +1,48 @@
+<header id="header" class="page-header">
+  <div class="title">
+    <!--<h1>Advokatfirman</h1>-->
+    <div class="company-name">Advokatfirman</div>
+    <div class="company-name-2">Peter Wanhainen AB</div>
+    <!--<div class="slogan">Detta är vår slogan</div>-->
+  </div>
+</header>
+
+<nav class="menu" id="main-menu" [ngClass]="{'is-open': displayDropdown}">
+  <button class="menu-toggle" id="toggle-menu" (click)="toggle()">
+    toggle menu
+  </button>
+  <div class="menu-dropdown">
+    <ul class="nav-menu">
+      <li><a routerLink="" routerLinkActive="active">Start</a></li>
+      <li><a routerLink="verksamhetsomraden" routerLinkActive="active">Verksamhetsområden</a></li>
+      <li><a routerLink="medarbetare" routerLinkActive="active">Medarbetare</a></li>
+      <li><a routerLink="samarbeten" routerLinkActive="active">Samarbeten</a></li>
+      <li><a routerLink="kontakt" routerLinkActive="active">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--
+<script type="text/javascript">
+  (function () {
+    var button = document.getElementById('toggle-menu');
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      var menu = document.getElementById('main-menu');
+      menu.classList.toggle('is-open');
+    });
+  })();
+</script>
+-->
+
+<!--
+<div>
+  <ul>
+    <li><a class="nav-link" routerLink="" routerLinkActive="active">Start</a></li>
+    <li><a class="nav-link" routerLink="verksamhetsomraden" routerLinkActive="active">Verksamhetsområden</a></li>
+    <li><a class="nav-link" routerLink="medarbetare" routerLinkActive="active">Medarbetare</a></li>
+    <li><a class="nav-link" routerLink="samarbeten" routerLinkActive="active">Samarbeten</a></li>
+    <li><a class="nav-link" routerLink="kontakt" routerLinkActive="active">Kontakt</a></li>
+  </ul>
+</div>
+-->
