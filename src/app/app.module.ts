@@ -11,6 +11,7 @@ import { AssociatesComponent } from './components/associates/associates.componen
 import { CollaboratorsComponent } from './components/collaborators/collaborators.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { EnglishComponent } from './components/english/english.component';
 
 export const appRoutes: Routes = [
   {path: '', component: StartComponent},
@@ -18,6 +19,7 @@ export const appRoutes: Routes = [
   {path: 'medarbetare', component: AssociatesComponent},
   {path: 'samarbeten', component: CollaboratorsComponent},
   {path: 'kontakt', component: ContactComponent},
+  {path: 'english', component: EnglishComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 
@@ -31,7 +33,8 @@ export const appRoutes: Routes = [
     AssociatesComponent,
     CollaboratorsComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EnglishComponent
   ],
   imports: [
     BrowserModule,
