@@ -312,11 +312,19 @@ main {
 
 .media__body {
   overflow: auto;
-  margin-top: 0;
+  display: inline-block;
+  margin-top: 1em;
 }
+
 .media__body > h4 {
   margin-top: 0;
   font-family: 'Cinzel', serif;
+}
+
+@media (min-width: 35em) {
+  .media__body {
+    display: block;
+  }
 }
 
 @media (min-width: 35em) {
