@@ -50,7 +50,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
+a.active {
   /*color: #b81414;*/
   color: #fff;
   text-decoration: underline;
@@ -360,10 +360,6 @@ main {
   text-align: center;
   font-size: 0.8rem;
 }
-
-
-
-
 
 
 

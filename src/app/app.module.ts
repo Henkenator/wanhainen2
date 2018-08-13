@@ -14,7 +14,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { EnglishComponent } from './components/english/english.component';
 
 export const appRoutes: Routes = [
-  {path: '', component: StartComponent},
+  {path: '', redirectTo: 'start', pathMatch: 'full'},
+  {path: 'start', component: StartComponent},
   {path: 'verksamhetsomraden', component: PracticeAreasComponent},
   {path: 'medarbetare', component: AssociatesComponent},
   {path: 'samarbeten', component: CollaboratorsComponent},
