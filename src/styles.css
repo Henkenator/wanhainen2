@@ -118,7 +118,7 @@ a.active {
 .hero {
   padding: 5em 1em;
   text-align: center;
-  background-image: url(./assets/images/family2.jpg);
+  background-image: url(./assets/images/family.jpg);
   background-size: 100%;
   color: #fff;
   text-shadow: 0.1em 0.1em 0.3em #000;
@@ -128,14 +128,14 @@ a.active {
   .hero {
     padding: 8em 3em;
     font-size: 1.2rem;
-    /*background-image: url(./assets/images/family2.jpg);*/
+    /*background-image: url(./assets/images/family.jpg);*/
   }
 }
 
 @media (min-width: 50em) {
   .hero {
     padding: 11em 6em;
-    /*background-image: url(./assets/images/family2.jpg);*/
+    /*background-image: url(./assets/images/family.jpg);*/
   }
 }
 
