@@ -10,20 +10,23 @@
       </div>
     </a>
   </div>
+
+  <nav class="menu" id="main-menu" [ngClass]="{'is-open': displayDropdown}">
+    <button class="menu-toggle" id="toggle-menu" (click)="toggle()">
+      toggle menu
+    </button>
+    <div class="menu-dropdown">
+      <ul class="nav-menu">
+        <li><a routerLink="start" routerLinkActive="active" (click)="toggle()">Start</a></li>
+        <li><a routerLink="verksamhetsomraden" routerLinkActive="active" (click)="toggle()">Verksamhetsområden</a></li>
+        <li><a routerLink="medarbetare" routerLinkActive="active" (click)="toggle()">Medarbetare</a></li>
+        <li><a routerLink="samarbeten" routerLinkActive="active" (click)="toggle()">Samarbeten</a></li>
+        <li><a routerLink="kontakt" routerLinkActive="active" (click)="toggle()">Kontakt</a></li>
+        <li><a routerLink="english" routerLinkActive="active" (click)="toggle()">In English</a></li>
+      </ul>
+    </div>
+  </nav>
+
 </header>
 
-<nav class="menu" id="main-menu" [ngClass]="{'is-open': displayDropdown}">
-  <button class="menu-toggle" id="toggle-menu" (click)="toggle()">
-    toggle menu
-  </button>
-  <div class="menu-dropdown">
-    <ul class="nav-menu">
-      <li><a routerLink="start" routerLinkActive="active" (click)="toggle()">Start</a></li>
-      <li><a routerLink="verksamhetsomraden" routerLinkActive="active" (click)="toggle()">Verksamhetsområden</a></li>
-      <li><a routerLink="medarbetare" routerLinkActive="active" (click)="toggle()">Medarbetare</a></li>
-      <li><a routerLink="samarbeten" routerLinkActive="active" (click)="toggle()">Samarbeten</a></li>
-      <li><a routerLink="kontakt" routerLinkActive="active" (click)="toggle()">Kontakt</a></li>
-      <li><a routerLink="english" routerLinkActive="active" (click)="toggle()">In English</a></li>
-    </ul>
-  </div>
-</nav>
+

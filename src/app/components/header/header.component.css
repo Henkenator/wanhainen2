@@ -2,6 +2,7 @@
   padding: 0.4em 1em;
   /*background-color: #fff;*/
   background-color: var(--beige);
+  overflow: hidden;
 }
 
 /*
@@ -37,6 +38,7 @@
 
 .logo-wrapper {
   overflow: hidden;
+  float: left;
 }
 
 .logo {
@@ -133,7 +135,7 @@ a.active {
 
 .menu-toggle {
   position: absolute;
-  top: -1.3em;
+  /*top: -1.3em;*/
   right: 0.1em;
   border: 0;
   background-color: transparent;
@@ -183,7 +185,8 @@ a.active {
   border: 1px solid #ccc;
   list-style: none;
   /*background-color: #000;*/
-  background-color: var(--dark-gray);
+  /*background-color: var(--dark-gray);*/
+  background-color: var(--beige);
   /*color: #fff;*/
 }
 
@@ -197,20 +200,29 @@ a.active {
   margin-top: 0.3em;
   /*color: #fff;*/
   /*color: var(--orange);*/
-  color: white;
+  /*color: var(--beige);*/
+  color: var(--dark-gray);
+  /*color: white;*/
   font-weight: normal;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   /*font-family: 'Tajawal', sans-serif;*/
+  font-family: 'Teko', sans-serif;
 }
 
 @media (min-width: 35em) {
+  .menu {
+    float: right
+  }
   .nav-menu {
     display: flex;
+    justify-content: flex-end;
     border: 0;
     padding: 0 1em;
+    margin-top:20px
   }
   .nav-menu > li {
-    flex: 1;
+    /*flex: 1;*/
+    margin-left: 10px;
   }
   .nav-menu > li + li {
     border: 0;
@@ -223,6 +235,6 @@ a.active {
 
 @media (min-width: 50em) {
   .nav-menu {
-    padding: 0 4em;
+    /*padding: 0 4em;*/
   }
 }
