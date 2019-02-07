@@ -1,0 +1,13 @@
+
+.page-footer {
+  margin-top: 3em;
+  padding: 1em 0;
+  background-color: var(--gray);
+  color: gray;
+}
+.page-footer__inner {
+  margin: 0 auto;
+  max-width: 1080px;
+  text-align: center;
+  font-size: 0.8rem;
+}
