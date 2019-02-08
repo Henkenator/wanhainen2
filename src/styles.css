@@ -62,13 +62,6 @@ main {
   }
 }*/
 
-.subtitle {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  font-family: 'Cinzel', serif;
-}
 
 
 @media (min-width: 35em) {
@@ -82,14 +75,6 @@ main {
     margin-right: 0.75em;
     margin-left: 0.75em;
   }
-}
-
-.start_table td {
-  padding-left: 0;
-}
-
-.start_table td + td {
-  padding-left: 2.5em;
 }
 
 
