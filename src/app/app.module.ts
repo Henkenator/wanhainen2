@@ -7,18 +7,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule, Routes} from '@angular/router';
 import { StartComponent } from './components/start/start.component';
 import { PracticeAreasComponent } from './components/practice-areas/practice-areas.component';
-import { AssociatesComponent } from './components/associates/associates.component';
-import { CollaboratorsComponent } from './components/collaborators/collaborators.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { EnglishComponent } from './components/english/english.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const appRoutes: Routes = [
   {path: '', redirectTo: 'start', pathMatch: 'full'},
   {path: 'start', component: StartComponent},
   {path: 'verksamhetsomraden', component: PracticeAreasComponent},
-  {path: 'medarbetare', component: AssociatesComponent},
-  {path: 'samarbeten', component: CollaboratorsComponent},
+  {path: 'om-oss', component: AboutUsComponent},
   {path: 'kontakt', component: ContactComponent},
   {path: 'english', component: EnglishComponent},
   {path: '**', component: PageNotFoundComponent},
@@ -31,11 +29,10 @@ export const appRoutes: Routes = [
     FooterComponent,
     StartComponent,
     PracticeAreasComponent,
-    AssociatesComponent,
-    CollaboratorsComponent,
     ContactComponent,
     PageNotFoundComponent,
-    EnglishComponent
+    EnglishComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
