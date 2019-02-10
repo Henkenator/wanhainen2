@@ -13,8 +13,8 @@ import { EnglishComponent } from './components/english/english.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const appRoutes: Routes = [
-  {path: '', redirectTo: 'start', pathMatch: 'full'},
-  {path: 'start', component: StartComponent},
+  /*{path: '', redirectTo: 'start', pathMatch: 'full'},*/
+  {path: '', component: StartComponent},
   {path: 'verksamhetsomraden', component: PracticeAreasComponent},
   {path: 'om-oss', component: AboutUsComponent},
   {path: 'kontakt', component: ContactComponent},
