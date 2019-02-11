@@ -17,7 +17,7 @@
     </button>
     <div class="menu-dropdown">
       <ul class="nav-menu">
-        <li><a routerLink="" routerLinkActive="active" (click)="toggle()">Start</a></li>
+        <li><a routerLink="" routerLinkActive="active" (click)="toggle()" [routerLinkActiveOptions]="{exact: true}">Start</a></li>
         <li><a routerLink="rattsomraden" routerLinkActive="active" (click)="toggle()">Rättsområden</a></li>
         <li><a routerLink="om-oss" routerLinkActive="active" (click)="toggle()">Om oss</a></li>
         <li><a routerLink="kontakt" routerLinkActive="active" (click)="toggle()">Kontakt</a></li>
