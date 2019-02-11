@@ -1,0 +1,51 @@
+.areas-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.areas-menu {
+  flex: 1;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.area {
+  flex: 1;
+}
+
+.areas-menu > h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.areas-menu > ul {
+  padding-left: 0.5em;
+}
+
+.areas-menu > ul > a > li {
+  list-style: none;
+  text-transform: uppercase;
+  border: 1px solid var(--gray);
+  padding: 0.5em;
+  width: 8em;
+}
+
+a:link {
+  color: darkgray;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkgray;
+}
+
+a:hover {
+  /*text-decoration: underline;*/
+  color: var(--dark-gray)
+}
+
+a.active {
+  /*color: #b81414;*/
+  color: var(--dark-gray);
+  /*text-decoration: underline;*/
+}

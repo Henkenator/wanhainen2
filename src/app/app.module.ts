@@ -11,6 +11,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { EnglishComponent } from './components/english/english.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { CrimeLawComponent } from './components/practice-areas/crime-law/crime-law.component';
+import { FamilyLawComponent } from './components/practice-areas/family-law/family-law.component';
+import { MigrationLawComponent } from './components/practice-areas/migration-law/migration-law.component';
+import {PracticeAreasModule} from './components/practice-areas/practice-areas.module';
 
 export const appRoutes: Routes = [
   /*{path: '', redirectTo: 'start', pathMatch: 'full'},*/
@@ -38,8 +42,9 @@ export const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      //{ enableTracing: true } // <-- debugging purposes only
-    )
+      { enableTracing: true } // <-- debugging purposes only
+    ),
+    PracticeAreasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,48 +4,19 @@
 </div>
 
 <main id="main">
-  <div class="row">
-    <section class="column">
-      <h2 class="subtitle">Brottmål</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo dolor
-        nec tortor rutrum aliquet. Aliquam facilisis tristique maximus. Mauris non
-        tristique nunc. Pellentesque tincidunt blandit posuere. Donec pulvinar quis
-        tortor sed vestibulum. Quisque auctor, leo sit amet aliquet suscipit, justo
-        lacus interdum libero, sit amet vestibulum purus mauris quis quam. Pellentesque
-        pellentesque auctor lectus, cursus mollis augue hendrerit ut. Sed euismod
-        euismod odio, vitae gravida sapien pretium eu. Suspendisse potenti. Nulla
-        nec nibh vitae lorem lobortis interdum. Nam in tortor sapien. Fusce sodales
-        pulvinar purus a lobortis.
-      </p>
-    </section>
-    <section class="column">
-      <h2 class="subtitle">Familjerätt</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo dolor
-        nec tortor rutrum aliquet. Aliquam facilisis tristique maximus. Mauris non
-        tristique nunc. Pellentesque tincidunt blandit posuere. Donec pulvinar quis
-        tortor sed vestibulum. Quisque auctor, leo sit amet aliquet suscipit, justo
-        lacus interdum libero, sit amet vestibulum purus mauris quis quam. Pellentesque
-        pellentesque auctor lectus, cursus mollis augue hendrerit ut. Sed euismod
-        euismod odio, vitae gravida sapien pretium eu. Suspendisse potenti. Nulla
-        nec nibh vitae lorem lobortis interdum. Nam in tortor sapien. Fusce sodales
-        pulvinar purus a lobortis.
-      </p>
-    </section>
-    <section class="column">
-      <h2 class="subtitle">Migrationsrätt</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo dolor
-        nec tortor rutrum aliquet. Aliquam facilisis tristique maximus. Mauris non
-        tristique nunc. Pellentesque tincidunt blandit posuere. Donec pulvinar quis
-        tortor sed vestibulum. Quisque auctor, leo sit amet aliquet suscipit, justo
-        lacus interdum libero, sit amet vestibulum purus mauris quis quam. Pellentesque
-        pellentesque auctor lectus, cursus mollis augue hendrerit ut. Sed euismod
-        euismod odio, vitae gravida sapien pretium eu. Suspendisse potenti. Nulla
-        nec nibh vitae lorem lobortis interdum. Nam in tortor sapien. Fusce sodales
-        pulvinar purus a lobortis.
-      </p>
-    </section>
+  <div class="areas-container">
+    <div class="areas-menu">
+      <h3>Våra områden</h3>
+      <p>Vi hanterar dina ärenden inom följande områden</p>
+      <ul>
+        <a routerLink="brottmal" routerLinkActive="active"><li>Brottmål</li></a>
+        <a routerLink="familjeratt" routerLinkActive="active"><li>Familjerätt</li></a>
+        <a routerLink="migrationsratt" routerLinkActive="active"><li>Migrationsrätt</li></a>
+      </ul>
+    </div>
+
+    <div class="area">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </main>
