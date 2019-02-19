@@ -70,6 +70,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  /*text-shadow: 2px 2px var(--dark-gray);*/
   background-color: black;
   padding-left: 10px;
   padding-right: 10px;
@@ -84,6 +85,7 @@ main {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   color: var(--beige);
+  /*color: white*/
 }
 
 .law-info {
@@ -116,19 +118,6 @@ main {
 }
 
 
-
-@media (min-width: 35em) {
-  .row {
-    display: flex;
-    margin-left: -.75em;
-    margin-right: -.75em;
-  }
-  .column {
-    flex: 1;
-    margin-right: 0.75em;
-    margin-left: 0.75em;
-  }
-}
 
 
 /*
