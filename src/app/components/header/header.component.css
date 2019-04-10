@@ -50,17 +50,20 @@
 
 .logo > span {
   color: var(--dark-gray);
-  border: 1px solid var(--dark-gray);
+  /*border: 1px solid var(--dark-gray);*/
   margin: 0px;
   padding-left: 6px;
-  padding-right: 6px;
+  padding-right: 20px;
   padding-top: 3px;
   padding-bottom: 3px;
   /*font-family: 'Meddon', cursive;*/
   /*font-family: 'Euphoria Script', cursive;*/
-  font-size: 2em;
-  font-family: 'Petit Formal Script', cursive;
+  font-size: 2.5em;
 
+
+  font-family: 'La Belle Aurore', cursive;
+
+  /*font-family: 'Petit Formal Script', cursive;*/
   /*font-family: 'Nothing You Could Do', cursive;*/
   /*font-family: 'Reenie Beanie', cursive;*/
   /*font-family: 'Charm', cursive;*/
