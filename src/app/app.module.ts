@@ -19,7 +19,8 @@ export const appRoutes: Routes = [
   {path: 'om-oss', component: AboutUsComponent},
   {path: 'kontakt', component: ContactComponent},
   {path: 'english', component: EnglishComponent},
-  {path: '**', component: PageNotFoundComponent},
+  // {path: '**', component: PageNotFoundComponent}, TODO Ta fram denna i prod?
+  {path: '**', component: StartComponent},
 ];
 
 @NgModule({
