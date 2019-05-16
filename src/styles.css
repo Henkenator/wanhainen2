@@ -30,7 +30,14 @@ html {
 body {
   margin: 0;
   /*font-family: Helvetica, Arial, sans-serif;*/
-  font-family: 'Tajawal', sans-serif;
+
+
+  /*font-family: 'Tajawal', sans-serif;*/
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.02em;
+
+
   /*font-family: 'Meddon', cursive;
   font-family: 'Euphoria Script', cursive;
   font-family: 'Parisienne', cursive;
