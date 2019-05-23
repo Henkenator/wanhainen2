@@ -1,18 +1,3 @@
-/*@media (min-width: 35em) {
-  .hero {
-    padding: 8em 3em;
-    font-size: 1.2rem;
-    /*background-image: url(./assets/images/family.jpg);*/
- /* }
-}
-
-@media (min-width: 50em) {
-  .hero {
-    padding: 11em 6em;
-    /*background-image: url(./assets/images/family.jpg);*/
-/* }
-}
-*/
 
 .start-info-container {
   margin: 0 auto;
@@ -20,11 +5,29 @@
 }
 
 .card-container {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between;*/
+
+
   margin: 0 auto;
   max-width: 1080px;
+
+  display: grid;
+  grid-template-columns: [first] auto [line] auto [end];
+  grid-template-areas:
+    "crime family"
+    "migration social"
+    "injury misc"
+}
+
+@media only screen and (min-width: 700px) {
+  .card-container {
+    grid-template-columns: [first] auto [line1] auto [line2] auto [end];
+    grid-template-areas:
+      "crime family migration"
+      "social injury misc"
+  }
 }
 
 .card {
@@ -58,4 +61,30 @@
 
 .card-image {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item-crime {
+  grid-area: crime;
+}
+
+.item-family {
+  grid-area: family;
+}
+
+.item-migration {
+  grid-area: migration;
+}
+
+.item-social {
+  grid-area: social;
+}
+
+.item-injury {
+  grid-area: injury;
+}
+
+.item-misc {
+  grid-area: misc;
 }
