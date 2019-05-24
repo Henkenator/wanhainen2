@@ -4,13 +4,13 @@
 }
 
 .start-info-container p {
-  padding: 10px;
+  padding: 15px;
 }
 
 .card-container {
   margin: 0 auto;
   max-width: 1080px;
-  padding: 5px;
+  padding: 10px;
 
   display: grid;
   grid-template-columns: [first] auto [line] auto [end];
