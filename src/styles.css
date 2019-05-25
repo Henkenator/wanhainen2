@@ -44,25 +44,8 @@ body {
   font-family: 'Petit Formal Script', cursive;*/
 }
 
-main {
-  /*padding: 1em;*/
-}
-
-/*
-@media (min-width: 35em) {
-  main {
-    padding: 1em 1em;
-  }
-}
-
-@media (min-width: 50em) {
-  main {
-    padding: 1em 3em;
-  }
-}*/
-
 .hero-container {
-  position: relative;
+  /*position: relative;*/
 }
 
 .hero-image {
