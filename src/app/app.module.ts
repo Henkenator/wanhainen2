@@ -18,7 +18,7 @@ export const appRoutes: Routes = [
   {path: '', component: StartComponent},
   {path: 'om-oss', component: AboutUsComponent},
   {path: 'kontakt', component: ContactComponent},
-  {path: 'english', component: EnglishComponent},
+  // {path: 'english', component: EnglishComponent},
   // {path: '**', component: PageNotFoundComponent}, TODO Ta fram denna i prod?
   {path: '**', component: StartComponent},
 ];
@@ -29,10 +29,10 @@ export const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     StartComponent,
-    PracticeAreasComponent,
+    // PracticeAreasComponent,
     ContactComponent,
     PageNotFoundComponent,
-    EnglishComponent,
+    // EnglishComponent,
     AboutUsComponent
   ],
   imports: [
@@ -41,9 +41,9 @@ export const appRoutes: Routes = [
       appRoutes,
       {
         scrollPositionRestoration: 'enabled',
-        enableTracing: true }, // <-- debugging purposes only
+        enableTracing: false }, // <-- debugging purposes only
     ),
-    PracticeAreasModule
+    // PracticeAreasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

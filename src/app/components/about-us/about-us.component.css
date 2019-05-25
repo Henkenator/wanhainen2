@@ -73,6 +73,10 @@
   margin-top: 1em;
 }
 
+.media__body a {
+  color: var(--dark-gray);
+}
+
 .media-header {
   margin-top: 0;
   /*font-family: 'Cinzel', serif;*/
