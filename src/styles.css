@@ -45,7 +45,8 @@ body {
 }
 
 .hero-container {
-  /*position: relative;*/
+  position: relative;
+  z-index: -1;
 }
 
 .hero-image {
@@ -71,11 +72,22 @@ body {
 
 .hero-text > span {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.25em;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   color: var(--beige);
   /*color: white*/
+}
+
+@media (min-width: 500px) {
+  .hero-text > span{
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 700px) {
+  .hero-text > span{
+    font-size: 1.8em;
+  }
 }
 
 .law-info {
