@@ -6,12 +6,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule, Routes} from '@angular/router';
 import { StartComponent } from './components/start/start.component';
-// import { PracticeAreasComponent } from './components/practice-areas/practice-areas.component';
+import { PracticeAreasComponent } from './components/practice-areas/practice-areas.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-// import { EnglishComponent } from './components/english/english.component';
+import { EnglishComponent } from './components/english/english.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-// import {PracticeAreasModule} from './components/practice-areas/practice-areas.module';
+import {PracticeAreasModule} from './components/practice-areas/practice-areas.module';
 
 export const appRoutes: Routes = [
   /*{path: '', redirectTo: 'start', pathMatch: 'full'},*/
@@ -29,10 +29,10 @@ export const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     StartComponent,
-    // PracticeAreasComponent,
+    PracticeAreasComponent,
     ContactComponent,
     PageNotFoundComponent,
-    // EnglishComponent,
+    EnglishComponent,
     AboutUsComponent
   ],
   imports: [
