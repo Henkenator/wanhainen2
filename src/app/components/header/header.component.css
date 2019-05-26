@@ -102,15 +102,6 @@ a.active {
   color: var(--dark-gray);
 }
 
-/* For Safari */
-@media not all and (min-resolution:.001dpcm) { @media {
-
-  .menu-toggle {
-    position: relative;
-    float: right;
-  }
-}}
-
 .menu-toggle::after {
   position: absolute;
   top: 0.2em;
@@ -119,6 +110,15 @@ a.active {
   content: "\2261";
   text-indent: 0;
 }
+
+/* For Safari */
+@media not all and (min-resolution:.001dpcm) { @media {
+
+  .menu-toggle::after {
+    left: 0em;
+    right: -1em;
+  }
+}}
 
 .menu-dropdown {
   display: none;
