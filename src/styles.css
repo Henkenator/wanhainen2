@@ -44,6 +44,10 @@ body {
   font-family: 'Petit Formal Script', cursive;*/
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
 .hero-container {
   position: relative;
   z-index: -1;

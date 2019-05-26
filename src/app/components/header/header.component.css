@@ -87,8 +87,9 @@ a.active {
 
 .menu-toggle {
   position: absolute;
-  top: 0.1em;
-  right: 0.1em;
+  top: 0.09em;
+  /*right: 0.1em;*/
+  right: 0px;
   border: 0;
   background-color: transparent;
   font-size: 4em;
