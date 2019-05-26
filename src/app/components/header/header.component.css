@@ -89,7 +89,7 @@ a.active {
   position: absolute;
   top: 0.09em;
   /*right: 0.1em;*/
-  right: 0px;
+  right: 5px;
   border: 0;
   background-color: transparent;
   font-size: 4em;
@@ -101,6 +101,15 @@ a.active {
   overflow: hidden;
   color: var(--dark-gray);
 }
+
+/* For Safari */
+@media not all and (min-resolution:.001dpcm) { @media {
+
+  .menu-toggle {
+    position: relative;
+    float: right;
+  }
+}}
 
 .menu-toggle::after {
   position: absolute;
