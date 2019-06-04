@@ -12,12 +12,14 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { EnglishComponent } from './components/english/english.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import {PracticeAreasModule} from './components/practice-areas/practice-areas.module';
+import { GdprComponent } from './components/gdpr/gdpr.component';
 
 export const appRoutes: Routes = [
   /*{path: '', redirectTo: 'start', pathMatch: 'full'},*/
   {path: '', component: StartComponent},
   {path: 'om-oss', component: AboutUsComponent},
   {path: 'kontakt', component: ContactComponent},
+  {path: 'gdpr', component: GdprComponent},
   // {path: 'english', component: EnglishComponent},
   // {path: '**', component: PageNotFoundComponent}, TODO Ta fram denna i prod?
   {path: '**', component: StartComponent},
@@ -33,7 +35,8 @@ export const appRoutes: Routes = [
     ContactComponent,
     PageNotFoundComponent,
     EnglishComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    GdprComponent
   ],
   imports: [
     BrowserModule,
